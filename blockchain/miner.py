@@ -38,6 +38,7 @@ def valid_proof(last_hash, proof):
 
     IE:  last_hash: ...AE9123456, new hash 123456E88...
     """
+    
 
     # TODO: Your code here!
     pass
