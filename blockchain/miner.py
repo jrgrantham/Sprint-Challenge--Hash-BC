@@ -26,8 +26,8 @@ def proof_of_work(last_proof):
     proof = 0
     #  TODO: Your code here
 
-    while valid_proof(last_proof, proof) is False and (timer() - start) < 20:
-        proof = random.random()
+    while valid_proof(last_proof, proof) is False and (timer() - start) < 10:
+        proof = random.randint(0, 99999999)
 
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
